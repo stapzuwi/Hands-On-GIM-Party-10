@@ -10,7 +10,7 @@ public class GroundDetector : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other == playerCollider) return;
-
+        
         playerMovement.isGrounded = true;    
     }
 
