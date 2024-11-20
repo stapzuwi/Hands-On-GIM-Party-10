@@ -954,6 +954,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerMovement: {fileID: 1425703139}
   playerCollider: {fileID: 1425703136}
+  Scene: DeathScene
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
