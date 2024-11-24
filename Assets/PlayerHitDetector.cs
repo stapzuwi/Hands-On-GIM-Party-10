@@ -5,14 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHitDetector : MonoBehaviour
 {
-    public PlayerMovement playerMovement;
-    public Collider2D playerCollider;
+    private GameObject player;
     public string Scene;
+    void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other == playerCollider)
+        if (other.tag == "Player")
         {
-            playerMovement.isDead = true; 
             SceneManager.LoadScene(Scene);
         }
     }

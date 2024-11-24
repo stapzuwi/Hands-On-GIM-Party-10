@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public bool isGrounded;
     public bool isDead;
     public GameObject player;
+    
 
     void Start()
     {
@@ -24,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (isDead)
         {
-            Destroy(player);
+            enabled = false;
         }
     }
 }

@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class CreateSpikeClone : MonoBehaviour
 {
-    public GameObject spike1;
+    public GameObject[] obstacle;
     private float spawnTime;
     private float timer;
-
+    private int random;
+    public PlayerMovement playerMovement;
+    public float obsspeed;
     void Start()
     {
-        spawnTime = Random.Range(1f,4f);
+        spawnTime = Random.Range(1f,3f);
+        obsspeed = 1;
     }
 
     void Update()
@@ -19,16 +22,20 @@ public class CreateSpikeClone : MonoBehaviour
         {
             spawnSpike();
             timer = 0;
-            spawnTime = Random.Range(1f,4f);
+            spawnTime = Random.Range(1f,3f);
         }
         timer += Time.deltaTime;
+        if (obsspeed < 2.5)
+        {
+            obsspeed += Time.deltaTime/60;
+        }
     }
     private void spawnSpike()
     {
-        Vector3 spawnPos = transform.position;
-        GameObject spike_ = Instantiate(spike1, spawnPos, Quaternion.identity);
-
-        Destroy(spike_,8);
-
+        random = Random.Range(0, obstacle.Length);
+        GameObject spawnedObstacle = Instantiate(obstacle[random], obstacle[random].transform.position, Quaternion.identity);
+        Rigidbody2D obsrb = spawnedObstacle.GetComponent<Rigidbody2D>();
+        obsrb.velocity = new Vector2(-8*obsspeed,obsrb.velocity.y);
+        Destroy(spawnedObstacle, 8);
     }
 }

@@ -10,15 +10,12 @@ public class ObstacleMovement : MonoBehaviour
     void Start()
     {
         obsrb = GetComponent<Rigidbody2D>();
+        obsrb.velocity = new Vector2(-8,obsrb.velocity.y);
     }
 
     void Update()
-    {
-        if (playerMovement.isDead == false)
-        {
-             obsrb.velocity = new Vector2(-8,obsrb.velocity.y);
-        }
-        else
+    {  
+        if (playerMovement.isDead == true)
         {
             obsrb.velocity = new Vector2(0,0);
         }
