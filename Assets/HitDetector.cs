@@ -14,7 +14,7 @@ public class HitDetector : MonoBehaviour
         if (other.transform.tag == "Obstacle")
         {
             playerMovement.isDead = true; 
-            SceneManager.LoadScene(Scene);
+            GameManager.Instance.GameOver();
         }
     }
 }

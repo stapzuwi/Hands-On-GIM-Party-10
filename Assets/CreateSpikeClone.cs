@@ -12,22 +12,25 @@ public class CreateSpikeClone : MonoBehaviour
     public float obsspeed;
     void Start()
     {
-        spawnTime = Random.Range(1f,3f);
+        spawnTime = Random.Range(0.75f,2.5f);
         obsspeed = 1;
     }
 
     void Update()
     {
-        if (timer>spawnTime)
+        if (GameManager.Instance.isPlaying)
         {
-            spawnSpike();
-            timer = 0;
-            spawnTime = Random.Range(1f,3f);
-        }
-        timer += Time.deltaTime;
-        if (obsspeed < 2.5)
-        {
-            obsspeed += Time.deltaTime/60;
+            if (timer>spawnTime)
+            {
+                spawnSpike();
+                timer = 0;
+                spawnTime = Random.Range(1f,3f);
+            }
+            timer += Time.deltaTime;
+            if (obsspeed < 2.5)
+            {
+                obsspeed += Time.deltaTime/60;
+            }
         }
     }
     private void spawnSpike()

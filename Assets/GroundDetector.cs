@@ -18,7 +18,7 @@ public class GroundDetector : MonoBehaviour
     {
         if (other == playerCollider) return;
 
-        playerMovement.isGrounded = false;    
+        playerMovement.isGrounded = false; 
     }
 
 }
