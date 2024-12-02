@@ -12,14 +12,16 @@ public class PlayerMovement : MonoBehaviour
     public GameObject player;
     public float jumpTime;
     private float jumpTimer;
+    public Animator animator;
     
 
     void Start()
     {
         playerrb = GetComponent<Rigidbody2D>();
-        jumpForce = 10f;
+        jumpForce = 15f;
         jumpTime = 0.2f;
         GameManager.Instance.isPlaying = true;
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -51,5 +53,8 @@ public class PlayerMovement : MonoBehaviour
             Destroy(player);
             enabled = false;
         }
+        animator.SetFloat("yVelocity", playerrb.velocity.y);
+        animator.SetBool("isGrounded", isGrounded);
+
     }
 }

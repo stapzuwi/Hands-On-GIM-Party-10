@@ -14,10 +14,12 @@ public class GameManager : MonoBehaviour
     public float currentScore;
     public bool isPlaying = false;
     public GameObject gameOverMenu;
+    public float gameSpeed;
     void Start()
     {
         currentScore = 0f;
         gameOverMenu.SetActive(false);
+        gameSpeed = 1f;
         
     }
     private void Update()
@@ -29,6 +31,10 @@ public class GameManager : MonoBehaviour
         else
         {
             gameOverMenu.SetActive(true);
+        }
+        if (gameSpeed < 2.5)
+        {
+            gameSpeed += Time.deltaTime/60;
         }
     }
     

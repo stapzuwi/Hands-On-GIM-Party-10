@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 2203998220978697361}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.50063, y: -0.0703, z: 0}
+  m_LocalPosition: {x: -0.464, y: -0.0703, z: 0}
   m_LocalScale: {x: 0.002452747, y: 0.8321662, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -118,7 +118,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -474.16333, y: 0.053891897}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -129,7 +129,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 44.17444, y: 0.8922162}
   m_EdgeRadius: 0
 --- !u!50 &6173098468841101332
 Rigidbody2D:
@@ -187,7 +187,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 15, y: -2.131361, z: 0}
-  m_LocalScale: {x: 8, y: 1, z: 1}
+  m_LocalScale: {x: 3.4, y: 1.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5510148056290167789}
@@ -234,7 +234,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bcdab41b00e77fb45bb1e69cf5a4cb55, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -304,16 +304,16 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0008339286, y: 0.019208074}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 3.29, y: 1.0016667}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3.3252668, y: 1.0384161}
   m_EdgeRadius: 0
