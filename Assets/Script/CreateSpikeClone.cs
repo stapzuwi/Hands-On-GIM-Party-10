@@ -12,7 +12,7 @@ public class CreateSpikeClone : MonoBehaviour
     public float obsspeed;
     void Start()
     {
-        spawnTime = Random.Range(0.75f,2.5f);
+        spawnTime = 1;
         obsspeed = 1;
     }
 
@@ -24,7 +24,7 @@ public class CreateSpikeClone : MonoBehaviour
             {
                 spawnSpike();
                 timer = 0;
-                spawnTime = Random.Range(1f,3f);
+                spawnTime = Random.Range(1f,2.5f);
             }
             timer += Time.deltaTime;
             if (obsspeed < 2.5)

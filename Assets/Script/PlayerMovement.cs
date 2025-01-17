@@ -11,15 +11,13 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce;
     public GameObject player;
     public float jumpTime;
-    private float jumpTimer;
+    public float jumpTimer;
     public Animator animator;
     
 
     void Start()
     {
         playerrb = GetComponent<Rigidbody2D>();
-        jumpForce = 15f;
-        jumpTime = 0.2f;
         GameManager.Instance.isPlaying = true;
         animator = GetComponent<Animator>();
     }
@@ -35,8 +33,9 @@ public class PlayerMovement : MonoBehaviour
         {
             if (jumpTimer < jumpTime)
             {
-                playerrb.velocity += new Vector2(playerrb.velocity.x, jumpForce/100);
+                playerrb.velocity += new Vector2(playerrb.velocity.x, jumpForce/80);
                 jumpTimer += Time.deltaTime;
+                Debug.Log("p");
             }
             else
             {
