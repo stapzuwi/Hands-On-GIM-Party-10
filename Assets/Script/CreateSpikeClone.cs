@@ -13,7 +13,6 @@ public class CreateSpikeClone : MonoBehaviour
     void Start()
     {
         spawnTime = 1;
-        obsspeed = 1;
     }
 
     void Update()
@@ -27,10 +26,6 @@ public class CreateSpikeClone : MonoBehaviour
                 spawnTime = Random.Range(1f,2.5f);
             }
             timer += Time.deltaTime;
-            if (obsspeed < 3)
-            {
-                obsspeed += Time.deltaTime/25;
-            }
         }
     }
     private void spawnSpike()
@@ -38,7 +33,7 @@ public class CreateSpikeClone : MonoBehaviour
         random = Random.Range(0, obstacle.Length);
         GameObject spawnedObstacle = Instantiate(obstacle[random], obstacle[random].transform.position, Quaternion.identity);
         Rigidbody2D obsrb = spawnedObstacle.GetComponent<Rigidbody2D>();
-        obsrb.velocity = new Vector2(-8*obsspeed,obsrb.velocity.y);
+        obsrb.velocity = new Vector2 (-8*GameManager.Instance.gameSpeed,0);
         Destroy(spawnedObstacle, 8);
     }
 }
