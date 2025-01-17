@@ -32,9 +32,9 @@ public class GameManager : MonoBehaviour
         {
             gameOverMenu.SetActive(true);
         }
-        if (gameSpeed < 2.5)
+        if (gameSpeed < 3)
         {
-            gameSpeed += Time.deltaTime/60;
+            gameSpeed += Time.deltaTime/25;
         }
     }
     

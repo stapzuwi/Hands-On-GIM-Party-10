@@ -27,9 +27,9 @@ public class CreateSpikeClone : MonoBehaviour
                 spawnTime = Random.Range(1f,2.5f);
             }
             timer += Time.deltaTime;
-            if (obsspeed < 2.5)
+            if (obsspeed < 3)
             {
-                obsspeed += Time.deltaTime/60;
+                obsspeed += Time.deltaTime/25;
             }
         }
     }
