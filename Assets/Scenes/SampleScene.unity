@@ -2146,7 +2146,7 @@ MonoBehaviour:
   isGrounded: 1
   isDead: 0
   isJumping: 1
-  jumpForce: 10
+  jumpForce: 12
   player: {fileID: 6588171842110728032}
   jumpTime: 0.3
   jumpTimer: 0
