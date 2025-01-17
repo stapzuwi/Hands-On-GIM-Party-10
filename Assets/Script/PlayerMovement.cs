@@ -29,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
             playerrb.velocity = new Vector2(playerrb.velocity.x, jumpForce);
             isJumping = true;
         }
+        /*
         if (Input.GetKey(KeyCode.Space) && isJumping)
         {
             if (jumpTimer < jumpTime)
@@ -42,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
                 isJumping = false;
             }
         }
+        */
         if (Input.GetKeyUp(KeyCode.Space))
         {
             isJumping = false;

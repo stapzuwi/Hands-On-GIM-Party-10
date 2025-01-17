@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8911256802920912045}
   - component: {fileID: 5382764183201680761}
   m_Layer: 0
-  m_Name: Spike Obstacle 2
+  m_Name: TripleSpike
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,15 +27,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 753492374490388763}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.321, y: -2.558, z: 0}
-  m_LocalScale: {x: 1.4, y: 1.4, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.013629219, w: 0.99990714}
+  m_LocalPosition: {x: 13.220226, y: -2.3, z: 0}
+  m_LocalScale: {x: 1.4, y: 2.1139998, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8985342577566917869}
   - {fileID: 6540032498138660731}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.562}
 --- !u!212 &3331118026135697711
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -190,13 +190,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6339144340095070447}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.022, y: 0.069, z: 0}
+  m_LocalRotation: {x: 0.013616878, y: -0.00016409844, z: -0.006745694, w: 0.99988455}
+  m_LocalPosition: {x: 1.2425636, y: 0.041000623, z: -0.00079901953}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8039221402041650540}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 1.56, y: -0.029, z: -0.773}
 --- !u!212 &1271910668565117648
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -351,13 +351,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9196538232977868460}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5261, y: 0.2928, z: 0}
-  m_LocalScale: {x: 0.9606, y: 1.4054, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.01272578, w: 0.99991906}
+  m_LocalPosition: {x: 0.6357, y: 0.1582, z: 0}
+  m_LocalScale: {x: 0.96463454, y: 1.3380814, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8039221402041650540}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 1.458}
 --- !u!212 &3683242773072111008
 SpriteRenderer:
   m_ObjectHideFlags: 0
